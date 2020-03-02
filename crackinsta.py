@@ -28,8 +28,8 @@ class Instabrute():
 		self.IsUserExists()
 
 
-		UseProxy = Input('[*] Do you want to use proxy (y/n): ').upper()
-		if (UseProxy == 'Y' or UseProxy == 'YES'):
+		UsePorxy = Input('[*] Do you want to use proxy (y/n): ').upper()
+		if (UsePorxy == 'Y' or UsePorxy == 'YES'):
 			self.randomProxy()
 
 
@@ -114,8 +114,8 @@ class Instabrute():
 		if (data['status'] == 'fail'):
 			print (data['message'])
 
-			UseProxy = Input('[*] Do you want to use proxy (y/n): ').upper()
-			if (UseProxy == 'Y' or UseProxy == 'YES'):
+			UsePorxy = Input('[*] Do you want to use proxy (y/n): ').upper()
+			if (UsePorxy == 'Y' or UsePorxy == 'YES'):
 				print ('[$] Try to use proxy after fail.')
 				self.randomProxy() #Check that, may contain bugs
 			return False
